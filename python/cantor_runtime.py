@@ -1,3 +1,6 @@
+import xlang
+cantor = xlang.importModule("cantor", thru="lrpc:1000")
+
 from autogen_core import (
     SingleThreadedAgentRuntime,
 )
