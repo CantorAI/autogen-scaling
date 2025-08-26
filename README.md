@@ -111,9 +111,4 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 * [AutoGen Docs](https://microsoft.github.io/autogen/)
 * [CantorAI Core Releases](https://github.com/CantorAI/cantor-core/releases)
 
-```
 
----
-
-Would you like me to also draft a **landing diagram** (ASCII or Mermaid) for the README that visually shows *AutoGen App → Cantor Runtime → Cantor Cluster*? That could make the “no code change, auto scale” story very clear at first glance.
-```
