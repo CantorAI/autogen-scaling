@@ -7,8 +7,11 @@ def Test(info):
 @cantor.Task(AUTOGEN=1)
 def autogen_task(dataFrame):
 	p_id = pid()
-	cantor.log("in autogen_task pid=${p_id}")
-	return dataFrame
+	pyObj = py_deserialize(dataFrame)
+	task_spec = pyObj["task_spec"]
+	qualname =  task_spec.qualname
+	cantor.log("in autogen_task pid=${p_id},qualname=${qualname}")
+	return True
 
 def RunTask(dataFrame):
 	retVal = autogen_task.run(dataFrame)
